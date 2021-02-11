@@ -1,0 +1,396 @@
+body {
+  color: #ffffff;
+  background-color: #181719;
+}
+
+body, ul,h1,p {
+  padding: 0px;
+  margin: 0px;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* ##### NAVBAR ##### */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 69px;
+}
+
+.navbar__logo {
+  font-family: Crimson Pro;
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 16px;
+  font-style: normal;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  display: inline-block;
+  padding: 8px 9px 7px 8px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+}
+
+.navbar__menu__list {
+  display: none;
+}
+
+.navbar__menu__button {
+  width: 28.5px;
+  height: auto;
+  border-radius: 0px;
+  margin-top: 6px;
+  margin-right: 0.75px;
+  fill: #f2f2f2;
+}
+
+/* ##### MAIN ##### */
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ##### FIRST SECTION ##### */
+
+.first-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 198px;
+  margin-bottom: 37px;
+}
+
+.first-section__title {
+  font-family: Lora;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.first-section__description {
+  width: 250px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.first-section__button {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+/* ##### SECOND SECTION ##### */
+
+.second-section {
+  position: relative;
+  height: 351px;
+}
+
+.second-section__card {
+  position: absolute;
+  right: 11px;
+  bottom: 0px;
+
+  width: 300px;
+  height: 138px;
+  background-color: #181719;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.second-section__section-photo {
+  width: 100%;
+  height: 264.32px;
+
+  background: url('../img/photo1.png') no-repeat;
+  background-size: cover;
+}
+
+.second-section__card__photo {
+  position: absolute;
+  top: 13.17px;
+  left: 22.68px;
+
+  border-radius: 100%;
+  width: 36.59px;
+  height: 36.59px;
+}
+
+.second-section__card__name {
+  position: absolute;
+  top: 16.83px;
+  left: 73.17px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.second-section__card__role {
+  position: absolute;
+  top: 35.12px;
+  left: 73.17px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: #828282;
+}
+
+.second-section__card__description {
+  position: absolute;
+  top: 68px;
+  left: 19px;
+
+  font-family: Lora;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.footer { 
+  position: relative;
+  width: 100%;
+  padding: 24px 0px;
+
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #A9A9A9;
+}
+
+.footer-border {
+  width: 271px ;
+  border-top: 1px solid #A9A9A9;
+
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+/* OVERLAY MENU */
+
+.overlay-menu {
+  position: absolute;
+  height: 100vh;
+  width: 0vw;
+  transition: 0.5s;
+  background-color: inherit;
+
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+.overlay-menu__button {
+  position: absolute;
+  top: 22px;
+  right: 20px;
+  width: 22.2px;
+  height: auto;
+}
+
+.overlay-menu__list {
+  display: flex;
+  height: 184px;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+
+  position: relative;
+  top: 24%;
+  width: 100%;
+  text-align: center;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.overlay-menu__list li:first-of-type {
+  font-weight: 700;
+}
+
+/* BREAKPOINTS */
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  body {
+    height: 100vh;
+  }
+
+  .container, .wrapper {
+    height: 100%;
+  }
+
+  .wrapper {
+    padding-left: 77px;
+    padding-right: 76px;
+    max-width: 1440px;
+  }
+
+  .navbar {
+    height: 116px;
+  }
+
+  .navbar__menu__list {
+    display: flex;
+    justify-content: space-between;
+    width: 321px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .navbar__menu__list li:first-of-type {
+    font-weight: 700;
+  }
+
+  .navbar__menu__button {
+    display: none;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 680px;
+  }
+
+  .main__container { 
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+ 
+  .first-section {
+    height: 309px;
+    
+  }
+
+  .first-section__title {
+    font-size: 48px;
+    line-height: 61px;
+  }
+  
+  .first-section__description {
+    width: 410px;
+  
+    font-size: 24px;
+    line-height: 29px;
+  }
+  
+  .first-section__button {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .second-section {
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+    height: 544px;
+  }
+
+  .second-section__section-photo {
+    max-width: 84%;
+    height: auto;
+    background-size: 100% auto;
+  }
+
+  .second-section__card {
+    position:absolute;
+    bottom: -111px;
+    right: 32px;
+
+    width: 410px;
+    height: 189px;
+  }
+
+  .second-section__card__photo {
+    top: 18px;
+    left: 31px;
+  
+    width: 50px;
+    height: 50px;
+  }
+  
+  .second-section__card__name {
+    position: absolute;
+    top: 23px;
+    left: 100px;
+  
+    font-size: 14px;
+    line-height: 17px;
+  }
+  
+  .second-section__card__role {
+    position: absolute;
+    top: 48px;
+    left: 100px;
+  
+    font-size: 12px;
+    line-height: 15px;
+  }
+  
+  .second-section__card__description {
+    position: absolute;
+    top: 93px;
+    left: 26px;
+  
+    font-size: 24px;
+    line-height: 31px;
+  }
+}
